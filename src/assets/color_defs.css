@@ -1,0 +1,67 @@
+:root{
+    --h-0: 0;
+    --s-0: 0%;
+    --gray-100: var(--h-0), var(--s-0), 8.63%;
+    --gray-200: var(--h-0), var(--s-0), 17.25%;
+    --gray-300: var(--h-0), var(--s-0), 27.06%;
+    --gray-400: var(--h-0), var(--s-0), 36.86%;
+    --gray-500: var(--h-0), var(--s-0), 47.45%;
+    --gray-600: var(--h-0), var(--s-0), 58.43%;
+    --gray-700: var(--h-0), var(--s-0), 70.2%;
+    --gray-800: var(--h-0), var(--s-0), 81.96%;
+    --gray-900: var(--h-0), var(--s-0), 94.9%;
+
+    --h-blue: 235.29;
+    --blue-100: var(--h-blue), 66.23%, 15.1%;
+    --blue-200: var(--h-blue), 52.07%, 23.73%;
+    --blue-300: var(--h-blue), 37.63%, 36.47%;
+    --blue-400: var(--h-blue), 29.87%, 45.29%;
+    --blue-500: var(--h-blue), 27.27%, 54.71%;
+    --blue-600: var(--h-blue), 32.18%, 65.88%;
+    --blue-700: var(--h-blue), 33.85%, 74.51%;
+    --blue-800: var(--h-blue), 43.66%, 86.08%;
+    --blue-900: var(--h-blue), 71.43%, 95.88%;
+
+    --h-green: 128.99;
+    --green-100: var(--h-green), 93.1%, 5.69%;
+    --green-200: var(--h-green), 70.49%, 11.96%;
+    --green-300: var(--h-green), 60%, 19.61%;
+    --green-400: var(--h-green), 44%, 29.41%;
+    --green-500: var(--h-green), 33.99%, 39.8%;
+    --green-600: var(--h-green), 28.57%, 50.59%;
+    --green-700: var(--h-green), 33.69%, 63.33%;
+    --green-800: var(--h-green), 40.17%, 77.06%;
+    --green-900: var(--h-green), 65.85%, 91.96%;
+
+    --h-yellow: 44.44 ;
+    --yellow-100: hsl(var(--h-yellow), 93.1%, 5.69%);
+    --yellow-200: hsl(var(--h-yellow), 75%, 12.55%);
+    --yellow-300: hsl(var(--h-yellow), 61.17%, 20.2%);
+    --yellow-400: hsl(var(--h-yellow), 48%, 29.41%);
+    --yellow-500: hsl(var(--h-yellow), 36.63%, 39.61%);
+    --yellow-600: hsl(var(--h-yellow), 28.57%, 50.59%);
+    --yellow-700: hsl(var(--h-yellow), 33.69%, 63.33%);
+    --yellow-800: hsl(var(--h-yellow), 40.17%, 77.06%);
+    --yellow-900: hsl(var(--h-yellow), 65.85%, 91.96%);
+
+    --h-orange: 32.73;
+    --orange-100: var(--h-orange), 84.62%, 7.65%;
+    --orange-200: var(--h-orange), 68.42%, 14.9%;
+    --orange-300: var(--h-orange), 54.1%, 23.92%;
+    --orange-400: var(--h-orange), 39.33%, 34.9%;
+    --orange-500: var(--h-orange), 31.88%, 44.9%;
+    --orange-600: var(--h-orange), 28.83%, 56.47%;
+    --orange-700: var(--h-orange), 34.15%, 67.84%;
+    --orange-800: var(--h-orange), 42.27%, 80.98%;
+    --orange-900: var(--h-orange), 68.75%, 93.73%;
+
+    --red-100: var(--h-0), 73.58%, 10.39%;
+    --red-200: var(--h-0), 57.01%, 20.98%;
+    --red-300: var(--h-0), 41.77%, 30.98%;
+    --red-400: var(--h-0), 30.28%, 42.75%;
+    --red-500: var(--h-0), 26.89%, 53.33%;
+    --red-600: var(--h-0), 30.81%, 63.73%;
+    --red-700: var(--h-0), 33.33%, 74.71%;
+    --red-800: var(--h-0), 45.21%, 85.69%;
+    --red-900: var(--h-0), 75%, 95.29%;
+}
