@@ -1,2 +1,4 @@
 @import url('./assets/color_defs.css');
 @import url('./assets//srcry/srcry.css');
+
+.svgGraphics{ display: none; }
