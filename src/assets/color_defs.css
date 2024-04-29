@@ -34,15 +34,15 @@
     --green-900: var(--h-green), 93.1%, 5.69%;
 
     --h-yellow: 44.44 ;
-    --yellow-100: hsl(var(--h-yellow), 65.85%, 91.96%);
-    --yellow-200: hsl(var(--h-yellow), 40.17%, 77.06%);
-    --yellow-300: hsl(var(--h-yellow), 33.69%, 63.33%);
-    --yellow-400: hsl(var(--h-yellow), 28.57%, 50.59%);
-    --yellow-500: hsl(var(--h-yellow), 36.63%, 39.61%);
-    --yellow-600: hsl(var(--h-yellow), 48%, 29.41%);
-    --yellow-700: hsl(var(--h-yellow), 61.17%, 20.2%);
-    --yellow-800: hsl(var(--h-yellow), 75%, 12.55%);
-    --yellow-900: hsl(var(--h-yellow), 93.1%, 5.69%);
+    --yellow-100: var(--h-yellow), 65.85%, 91.96%;
+    --yellow-200: var(--h-yellow), 40.17%, 77.06%;
+    --yellow-300: var(--h-yellow), 33.69%, 63.33%;
+    --yellow-400: var(--h-yellow), 28.57%, 50.59%;
+    --yellow-500: var(--h-yellow), 36.63%, 39.61%;
+    --yellow-600: var(--h-yellow), 48%, 29.41%;
+    --yellow-700: var(--h-yellow), 61.17%, 20.2%;
+    --yellow-800: var(--h-yellow), 75%, 12.55%;
+    --yellow-900: var(--h-yellow), 93.1%, 5.69%;
 
     --h-orange: 32.73;
     --orange-100: var(--h-orange), 68.75%, 93.73%;
