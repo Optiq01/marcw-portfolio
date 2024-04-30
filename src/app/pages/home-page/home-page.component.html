@@ -1,5 +1,7 @@
 <section class="mainContainer">
-    <svg viewBox="0 0 288 72" width="100%">
+    <div class="background-frame"></div>
+    <div class="background-filter"></div>
+    <svg class="logo-frame" viewBox="0 0 288 90" width="100%">
         <defs>
             <clipPath id="marcus_mask">
                 <polygon points="108.18248,8.588684 5.631578,8.588684 5.631578,39.093933 117.769638,39.093933" />
@@ -10,8 +12,23 @@
             </clipPath>
         </defs>
 
-        <use href="#w_whole" x="110.1918" y="14.9823" />
-        <use href="#marcus_full" x="14.0457" y="14.9823" />
-        <use href="#wieland_full" x="168.8723" y="32.0067" />
+        <use class="w_graphic" href="#w_whole" x="110.1918" y="14.9823" />
+        
+        <g class="marcus_container">
+            <use class="marcus_graphic" href="#marcus_full" x="14.0457" y="14.9823" />
+        </g>
+
+        <g class="wieland_container">
+            <use class="wieland_graphic" href="#wieland_full" x="168.8723" y="32.0067" />
+        </g>
+        <text class="profession_title" y="72" text-anchor="middle" x="144">
+            Full Stack Developer
+        </text>
     </svg>
+
+    <!--<article>
+        <p>
+            Full Stack Developer
+        </p>
+    </article>-->
 </section>

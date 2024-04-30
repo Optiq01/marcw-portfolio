@@ -1,3 +1,91 @@
 .mainContainer{
-    height: 80vh;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.background-frame{
+    grid-area: 1/1/2/2;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/intro_background.jpg');
+    background-size: cover;
+    z-index: 1;
+}
+
+.background-filter{
+    grid-area: 1/1/2/2;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(var(--gray-700), .96);
+    z-index: 2;
+}
+
+.logo-frame{
+    grid-area: 1/1/2/2;
+    z-index: 3;
+}
+
+.w_graphic{
+    transform-origin: center;
+    animation: wGroupAnimationSequence .7s ease-in forwards;
+}
+
+@keyframes wGroupAnimationSequence{
+    from{
+        transform: translateX(-105%) rotate(0deg);
+    }
+    to{
+        transform: translateX(0) rotate(1440deg);
+    }
+}
+
+.marcus_container{
+    clip-path: url('#marcus_mask');
+}
+
+.wieland_container{
+    clip-path: url('#wieland_mask');
+}
+
+.marcus_graphic{
+    --direction:45%;
+    fill: hsl(var(--gray-500), 1);
+    transform: translateX(var(--direction));
+    animation: nameGroupAnimationSequence 300ms 700ms ease-in forwards;
+}
+
+@keyframes marcusGroupAnimationSequence{
+    from{ transform: translateX(var(--direction)); }
+    to{ transform: translateX(0); }
+}
+
+.wieland_graphic{
+    --direction:-45%;
+    transform: translateX(-45%);
+    fill: hsl(var(--yellow-500), 1);
+    animation: nameGroupAnimationSequence 300ms 1s ease-in forwards;
+}
+
+@keyframes nameGroupAnimationSequence{
+    0%{ transform: translateX(var(--direction)) skew(20deg, 0deg); }
+    98%{ transform: skew(20deg, 0deg); }
+    100%{ transform: translateX(0) skew(0); }
+}
+
+.profession_title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    fill: hsl(var(--gray-300), 1);
+    transform: translateY(30px);
+    opacity: 0;
+    animation: workTitleAnimationSequence 300ms 1300ms ease-in forwards;
+}
+
+@keyframes workTitleAnimationSequence{
+    from{ opacity: 0; transform: translateY(30px); }
+    to{ opacity: 1; transform: translateY(0); }
 }
