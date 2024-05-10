@@ -31,8 +31,15 @@ export class SkillModalService {
 
   constructor() { }
 
-  private openModal(): void{ this.ModalActive.next(true); }
-  public closeModal(): void{ this.ModalActive.next(false); }
+  private openModal(): void{
+    this.ModalActive.next(true);
+    document.body.style.overflow = 'hidden';
+  }
+  public closeModal(): void{
+    this.ModalActive.next(false);
+    document.body.style.overflow = 'scroll';
+
+  }
 
   public updateCurrentSkill(skill: SkillData): void{
     this.CurrentSkill.next(skill);
