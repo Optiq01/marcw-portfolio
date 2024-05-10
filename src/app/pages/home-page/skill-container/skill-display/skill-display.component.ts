@@ -46,4 +46,8 @@ export class SkillDisplayComponent implements OnInit {
     
     return `${currentYear - this.Data.experience.startYear!} yrs`;
   }
+
+  public openModal():void{
+    this.modalService.updateCurrentSkill(this.Data);
+  }
 }
