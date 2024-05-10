@@ -35,12 +35,23 @@
     </div>
 
     <article class="srcryBox summaryTextContainer">
-        <h2 class="srcryTxt summaryTitle">
+        <h2 class="srcryTxt sectionTitle">
             Summary
         </h2>
         <p class="srcryTxt summaryText">
-            Seasoned Full Stack Developer with 7 years of experience specializing in building microfrontends, crafting reusable components and setting up both REST and GraphQL APIs. Expert in creating robust automated tests with Cypress and implementing state management systems using Redux, NGRX and NGXS.
-Seeking to leverage extensive UI skills in a dynamic Full Stack Developer role.
+            Seasoned Full Stack Developer with experience building microfrontends, scalable UIs and backend APIs. Expert in creating robust automated tests and implementing state management solutions for complex applications. Seeking to leverage my extensive skillset in a dynamic Full Stack Developer role.
         </p>
     </article>
+</section>
+
+ <section class="srcryBox skillSection">
+    <p class="srcryTxt clickCaption scroll_in">
+        <i>
+            (click on a skill for more info)
+        </i>
+    </p>
+    <skill-container [Title]="'Languages'" [Data]="Languages" />
+    <skill-container [Title]="'Frameworks'" [Data]="Frameworks" />
+    <skill-container [Title]="'Data'" [Data]="Data" />
+    <skill-container [Title]="'Testing'" [Data]="Testing" />
 </section>

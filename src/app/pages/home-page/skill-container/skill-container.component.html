@@ -1,0 +1,8 @@
+<h2 class="srcryTxt skillTitle scroll_in">{{Title}}</h2>
+<section class="skillContainer">
+    <article class="srcryBox skillList scroll_in">
+        @for (item of Data; track $index) {
+            <skill-display [Data]="item" [id]="$index" />
+        }
+    </article>
+</section>

@@ -1,0 +1,29 @@
+.mainContainer{
+    display: grid;
+    place-items: center;
+    gap: var(--line-semiBold);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.mainContainer:hover{
+    transform: scale(1.2);
+}
+
+.logo_container{
+    max-width: var(--tiny-1-5);
+    height: var(--tiny-1-5);
+}
+
+.skillName{
+    --text-size: var(--text-widget-4);
+    --kerning-nudge-amt: 7;
+    color: hsl(var(--gray-700), 1);
+}
+
+.experienceText{
+    --text-size: var(--text-caption-3);
+    --kerning-nudge-amt: 7;
+    color: hsl(var(--gray-500), 1);
+}
+

@@ -1,0 +1,28 @@
+:host{
+    display: grid;
+    width: 100%;
+    justify-items: center;
+    gap: var(--xTiny-1-3);
+    padding-bottom: var(--tiny-1-4);
+}
+
+.skillContainer{
+    display: grid;
+    justify-items: center;
+    width: 100%;
+}
+
+.skillTitle{
+    --text-size: var(--text-subtitle-2);
+    --kerning-nudge-amt: 4;
+    color: hsl(var(--gray-700), 1);
+}
+
+.skillList{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--tiny-2-3), 1fr));
+    gap: var(--xTiny-2-4) var(--xTiny-1-3);
+    --baseSize-w: var(--small-1-4);
+    --edgeChase-w: var(--xTiny-1-6);
+    --chaseStop-w: var(--hiMed-1-8);
+}

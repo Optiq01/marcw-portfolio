@@ -1,6 +1,7 @@
 :host{
     display: grid;
     grid-auto-rows: auto;
+    background-color:hsl(var(--gray-100), 1);
 }
 
 .heroContainer{
@@ -10,12 +11,13 @@
     height: 100vh;
     transform: translateY(0);
     animation: heroAnimation 300ms ease-out forwards;
-    animation-delay: 3.8s;
+    animation-delay: 4s;
 }
 
 @keyframes heroAnimation{
-    from {transform: translateY(0);}
-    to{transform: translateY(-110vh); display: none;}
+    0% {transform: translateY(0); height: 100vh;}
+    99%{height: 100vh;}
+    100%{transform: translateY(-110vh); height: 0px; display: none;}
 }
 
 .background-frame{
@@ -113,7 +115,6 @@
 }
 
 .summaryContainer{
-    grid-area: 2/1/3/2;
     width: 100%;
     display: grid;
     justify-self: center;
@@ -142,7 +143,7 @@
     transform: translateX(-120%);
     opacity: 0;
     animation: summaryPhotoAnimation 300ms forwards;
-    animation-delay: 4.2s;
+    animation-delay: 4.5s;
 }
 
 @keyframes summaryPhotoAnimation{
@@ -169,7 +170,7 @@
     transform: translateX(120%);
     opacity: 0;
     animation: summaryTextAnimation 300ms forwards;
-    animation-delay: 4.2s;
+    animation-delay: 4.5s;
 }
 
 @keyframes summaryTextAnimation{
@@ -183,7 +184,7 @@
     }
 }
 
-.summaryTitle{
+.sectionTitle{
     --text-size: var(--text-headline-3);
     --kerning-nudge-amt: 3;
     text-align: center;
@@ -200,4 +201,28 @@
 
 .emphasized{
     font-weight: 400;
+}
+
+.skillSection{
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(var(--gray-200), .22);
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: var(--micro-2-3);
+    justify-items: center;
+    justify-self: center;
+    --baseSize-w: var(--small-1-4);
+    --edgeChase-w: var(--xTiny-1-6);
+    --chaseStop-w: var(--hiMed-1-8);
+    margin-top: var(--tiny-1-4);
+    border-radius: var(--line-narrow);
+    box-shadow: hsl(var(--gray-600), 1) 0px 0px var(--line-bold);
+}
+
+.clickCaption{
+    --text-size: var(--text-caption-3);
+    --kerning-nudge-amt: 7;
+    color: hsl(var(--gray-500), 1);
+    margin-top: var(--xTiny-2-3);
 }
