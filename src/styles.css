@@ -8,3 +8,17 @@
 }
 
 .svgGraphics{ display: none; }
+
+@keyframes scrollAnimation{
+    from{
+        transform: scale(.3);
+    }
+}
+
+@media(prefers-reduced-motion: no-preference){
+    .scroll_in{
+        animation: scrollAnimation linear both;
+        animation-timeline: view();
+        animation-range: 10vh 50vh;
+    }
+}
