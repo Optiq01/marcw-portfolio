@@ -6,7 +6,13 @@ const SKILLS: SkillData[] = [
     id: 'html',
     name: 'HTML',
     type: 'language',
-    logo: 'html_logo',
+    logo: '#html_logo',
+    viewBox: {
+      x: 0,
+      y: 0,
+      width: 292.869598,
+      height: 413.386261
+    },
     colors: [
       {
         color: 'gray-300',
@@ -27,7 +33,13 @@ const SKILLS: SkillData[] = [
     id: 'css',
     name: 'CSS',
     type: 'language',
-    logo: 'css_logo',
+    logo: '#css_logo',
+    viewBox: {
+      x: 0,
+      y: 0,
+      width: 292.778442,
+      height: 413.386261
+    },
     colors: [
       {
         color: 'gray-300',
@@ -48,7 +60,13 @@ const SKILLS: SkillData[] = [
     id: 'srcry',
     name: 'SRCRY',
     type: 'framework',
-    logo: 'srcry_logo',
+    logo: '#srcry_logo',
+    viewBox: {
+      x: 0,
+      y: 0,
+      width:254.34375,
+      height: 411.536935
+    },
     colors: [
       {
         color: 'gray-300',
@@ -65,7 +83,13 @@ const SKILLS: SkillData[] = [
     id: 'svg',
     name: 'SVG',
     type: 'language',
-    logo: 'svg_logo',
+    logo: '#svg_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 294.315796,
+      height: 294.213501
+    },
     colors: [
       {
         color: 'gray-300',
@@ -82,7 +106,13 @@ const SKILLS: SkillData[] = [
     id: 'typescript',
     name: 'TypeScript',
     type: 'language',
-    logo: 'ts_logo',
+    logo: '#ts_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 294.315796,
+      height: 294.213501
+    },
     colors: [
       {
         color: 'gray-300',
@@ -99,7 +129,13 @@ const SKILLS: SkillData[] = [
     id: 'javascript',
     name: 'JavaScript',
     type: 'language',
-    logo: 'js_logo',
+    logo: '#js_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width:294.758331,
+      height:294.758331
+    },
     colors: [
       {
         color: 'gray-300',
@@ -116,15 +152,21 @@ const SKILLS: SkillData[] = [
     id: 'nrwlnx',
     name: 'NRWL NX',
     type: 'framework',
-    logo: 'nx_logo',
+    logo: '#nx_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 293.305267,
+      height: 182.239227
+    },
     colors: [
       {
         color: 'gray-300',
         order: 1
       },
       {
-        color: 'gray-200',
-        order: 1
+        color: 'gray-400',
+        order: 2
       }
     ],
     experience: {
@@ -137,7 +179,13 @@ const SKILLS: SkillData[] = [
     id: 'angular',
     name: 'Angular',
     type: 'framework',
-    logo: 'angular_logo',
+    logo: '#angular_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 293.684204,
+      height: 310.821381
+    },
     colors: [
       {
         color: 'gray-300',
@@ -154,7 +202,13 @@ const SKILLS: SkillData[] = [
     id: 'react',
     name: 'React',
     type: 'framework',
-    logo: 'react_logo',
+    logo: '#react_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 294.533264,
+      height: 262.118011
+    },
     colors: [
       {
         color: 'gray-300',
@@ -171,11 +225,21 @@ const SKILLS: SkillData[] = [
     id: 'vuejs',
     name: 'Vue JS',
     type: 'framework',
-    logo: 'vue_logo',
+    logo: '#vue_logo',
+    viewBox: {
+      x: 0,
+      y: 0,
+      width: 291.789459,
+      height: 252.699905
+    },
     colors: [
       {
         color: 'gray-300',
         order: 1
+      },
+      {
+        color: 'gray-500',
+        order: 2
       }
     ],
     experience: {
@@ -188,7 +252,13 @@ const SKILLS: SkillData[] = [
     id: 'redux',
     name: 'Redux',
     type: 'data',
-    logo: 'redux_logo',
+    logo: '#redux_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 294.422607,
+      height: 279.510559
+    },
     colors: [
       {
         color: 'gray-300',
@@ -205,7 +275,13 @@ const SKILLS: SkillData[] = [
     id: 'nestjs',
     name: 'Nest JS',
     type: 'framework',
-    logo: 'nest_logo',
+    logo: '#nest_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 296.323486,
+      height: 295.295441
+    },
     colors: [
       {
         color: 'gray-300',
@@ -222,7 +298,13 @@ const SKILLS: SkillData[] = [
     id: 'graphql',
     name: 'GraphQL',
     type: 'data',
-    logo: 'graphql_logo',
+    logo: '#graphql_logo',
+    viewBox: {
+      x: 0,
+      y: 0,
+      width: 296.61438,
+      height: 333.278229
+    },
     colors: [
       {
         color: 'gray-300',
@@ -239,7 +321,13 @@ const SKILLS: SkillData[] = [
     id: 'ngxs',
     name: 'NGXS',
     type: 'data',
-    logo: 'ngxs_logo',
+    logo: '#ngxs_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 298.717865,
+      height: 81.872894
+    },
     colors: [
       {
         color: 'gray-300',
@@ -256,11 +344,21 @@ const SKILLS: SkillData[] = [
     id: 'ngrx',
     name: 'NGRX',
     type: 'data',
-    logo: 'ngrx_logo',
+    logo: '#ngrx_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 296.852661,
+      height: 318.396484
+    },
     colors: [
       {
         color: 'gray-300',
         order: 1
+      },
+      {
+        color: 'gray-500',
+        order: 2
       }
     ],
     experience: {
@@ -273,11 +371,21 @@ const SKILLS: SkillData[] = [
     id: 'nodejs',
     name: 'Node JS',
     type: 'framework',
-    logo: 'node_logo',
+    logo: '#node_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 297.1409,
+      height: 83.908829
+    },
     colors: [
       {
         color: 'gray-300',
         order: 1
+      },
+      {
+        color: 'gray-400',
+        order: 2
       }
     ],
     experience: {
@@ -290,7 +398,13 @@ const SKILLS: SkillData[] = [
     id: 'php',
     name: 'PHP',
     type: 'language',
-    logo: 'php_logo',
+    logo: '#php_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 297.210541,
+      height: 149.337753
+    },
     colors: [
       {
         color: 'gray-300',
@@ -307,7 +421,13 @@ const SKILLS: SkillData[] = [
     id: 'cypress',
     name: 'Cypress',
     type: 'testing',
-    logo: 'cypress_logo',
+    logo: '#cypress_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 297.863159,
+      height: 120.045601
+    },
     colors: [
       {
         color: 'gray-300',
@@ -328,7 +448,13 @@ const SKILLS: SkillData[] = [
     id: 'jasmine',
     name: 'Jasmine',
     type: 'testing',
-    logo: 'jasmine_logo',
+    logo: '#jasmine_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 294.773682,
+      height: 294.646362
+    },
     colors: [
       {
         color: 'gray-300',
@@ -345,7 +471,13 @@ const SKILLS: SkillData[] = [
     id: 'selenium',
     name: 'Selenium',
     type: 'testing',
-    logo: 'selenium_logo',
+    logo: '#selenium_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 757.097351,
+      height: 792.895264
+    },
     colors: [
       {
         color: 'gray-300',
@@ -362,7 +494,13 @@ const SKILLS: SkillData[] = [
     id: 'storybook',
     name: 'Storybook',
     type: 'framework',
-    logo: 'storybook_logo',
+    logo: '#storybook_logo',
+    viewBox:{
+      x: 0,
+      y: 0,
+      width: 297.761597,
+      height: 370.980133
+    },
     colors: [
       {
         color: 'gray-300',
@@ -379,7 +517,13 @@ const SKILLS: SkillData[] = [
     id: 'sass',
     name: 'Sass',
     type: 'language',
-    logo: 'sass_logo',
+    logo: '#sass_logo',
+    viewBox: {
+      x: 0,
+      y: 0,
+      width: 297.118408,
+      height: 222.82106
+    },
     colors: [
       {
         color: 'gray-300',
@@ -396,7 +540,13 @@ const SKILLS: SkillData[] = [
     id: 'bootstrap',
     name: 'Bootstrap',
     type: 'framework',
-    logo: 'bootstrap_logo',
+    logo: '#bootstrap_logo',
+    viewBox: {
+      x: 0,
+      y: 0,
+      width: 297.347382,
+      height: 236.86969
+    },
     colors: [
       {
         color: 'gray-300',
@@ -413,7 +563,13 @@ const SKILLS: SkillData[] = [
     id: 'tailwind',
     name: 'Tailwind',
     type: 'framework',
-    logo: 'tailwind_logo',
+    logo: '#tailwind_logo',
+    viewBox: {
+      x: 0,
+      y: 0,
+      width: 298.221039,
+      height: 177.859055
+    },
     colors: [
       {
         color: 'gray-300',
@@ -430,7 +586,13 @@ const SKILLS: SkillData[] = [
     id: 'wordpress',
     name: 'Wordpress',
     type: 'framework',
-    logo: 'wordpress_logo',
+    logo: '#wordpress_logo',
+    viewBox: {
+      x: 0,
+      y: 0,
+      width: 298.115784,
+      height: 298.115723
+    },
     colors: [
       {
         color: 'gray-300',
