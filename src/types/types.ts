@@ -15,11 +15,19 @@ export interface SkillExperience{
     startMonth?: number;
 }
 
+export interface ViewboxParams{
+    x: number;
+    y: number;
+    width: number;
+    height: number;
+}
+
 export interface SkillData{
     id: string;
     name: string;
     type: SkillType;
     logo: string;
+    viewBox: ViewboxParams;
     colors: LogoColor[];
     experience: SkillExperience;
     usage: number;
