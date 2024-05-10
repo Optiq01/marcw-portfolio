@@ -3,7 +3,7 @@ import { SkillData } from '../../../types/types';
 import { SkillModalService } from './skill-modal.service';
 
 @Component({
-  selector: 'app-skill-modal',
+  selector: 'skill-modal',
   standalone: true,
   imports: [],
   templateUrl: './skill-modal.component.html',
