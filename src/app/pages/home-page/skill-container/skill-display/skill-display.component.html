@@ -1,1 +1,7 @@
-<p>skill-display works!</p>
+<article class="mainContainer">
+    <svg class="logo_container" [attr.viewBox]="getViewBoxSettings()">
+        <use [attr.href]="Data.logo" [ngStyle]="Styles" />
+    </svg>
+    <h5 class="srcryTxt skillName">{{Data.name}}</h5>
+    <p class="srcryTxt experienceText">{{calcExperience()}}</p>
+</article>
