@@ -226,3 +226,10 @@
     color: hsl(var(--gray-500), 1);
     margin-top: var(--xTiny-2-3);
 }
+
+.meterTest{
+    display: grid;
+    width: var(--loMed-1-2);
+    place-items: center;
+    place-self: center;
+}

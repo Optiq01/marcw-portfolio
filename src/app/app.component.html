@@ -1,5 +1,7 @@
 <navbarComponent />
-<skill-modal [@modalAnimation]="ModalToggle ? 'open': 'closed'" class="skillModal" />
+@if(ModalToggle){
+  <skill-modal @modalAnimation class="skillModal" />
+}
 <main>
   <router-outlet />
 </main>

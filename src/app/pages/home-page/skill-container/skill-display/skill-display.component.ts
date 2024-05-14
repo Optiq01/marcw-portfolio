@@ -1,11 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SkillData, SkillExperience } from '../../../../../types/types';
+import { LogoStyle, SkillData, SkillExperience } from '../../../../../types/types';
 import { CommonModule } from '@angular/common';
 import { SkillModalService } from '../../../../ui/skill-modal/skill-modal.service';
-
-export interface LogoStyle{
-  [prop: string]: string;
-}
 
 @Component({
   selector: 'skill-display',
@@ -29,7 +25,7 @@ export class SkillDisplayComponent implements OnInit {
     return `${this.Data.viewBox.x} ${this.Data.viewBox.y} ${this.Data.viewBox.width} ${this.Data.viewBox.height}`;
   }
 
-  private setColors(){
+  private setColors(): void{
 
     this.Data.colors.forEach(a=>{
       let prop: string = '';

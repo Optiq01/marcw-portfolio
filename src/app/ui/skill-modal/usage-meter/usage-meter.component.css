@@ -1,0 +1,72 @@
+:host{
+    display: grid;
+    place-items: center;
+    width: var(--loMed-2-3);
+    height: var(--loMed-2-3);
+}
+
+.mainContainer{
+    grid-area: 1/1/2/2;
+    display: grid;
+    place-items: center;
+    width: var(--loMed-1-3);
+    height: calc(var(--small-2-4) / 2);
+    overflow: hidden;
+}
+
+.outerBorder{
+    --size: var(--small-2-4);
+    display:block;
+    width: var(--size);
+    border-radius: 50%;
+    height: var(--size);
+    background-color: blue;
+    overflow: hidden;
+}
+
+.meter{
+    display:block;
+    width: var(--size);
+    height: calc(var(--size) / 2);
+    background-color: orange;
+    position: relative;
+    top: 50%;
+    transform-origin: top center;
+    transform: rotate(30deg);
+    border-left: orange solid 20px
+}
+
+.center{
+    display: block;
+    background-color: hsl(var(--gray-100), 1);
+    z-index: 3;
+    width: calc(var(--size) / 1.618);
+    height: calc(var(--size) / 1.618);
+    border-radius: 50%;
+    transform-origin: center;
+    transform:translate(30%, -50%);
+}
+
+.textPath{
+    grid-area: 1/1/2/2;
+    z-index: 6;
+    transform-origin: center;
+    fill: none;
+    transform: scale(.83);
+}
+
+.tick{
+    stroke: black;
+    stroke-width: .5px;
+
+}
+
+.meterText{
+    font-size: 10px;
+    color: black;
+}
+
+/*.tick{
+    transform-origin: -80px 0px;
+    transform: rotate(20deg);
+}*/

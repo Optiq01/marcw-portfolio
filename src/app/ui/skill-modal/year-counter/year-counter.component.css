@@ -1,0 +1,14 @@
+:host{
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height: min-content;
+}
+
+h2{
+    font-size: var(--text-jumbotron-3);
+}
+
+p{
+    font-size: var(--text-widget-3);
+}

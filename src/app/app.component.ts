@@ -7,9 +7,32 @@ import { SkillModalService } from './ui/skill-modal/skill-modal.service';
 import { animation, animate, transition, state, style, trigger } from '@angular/animations';
 
 export const ModalAnimation = trigger('modalAnimation', [
-  state('closed', style({ transform: 'scale(0)', opacity: 0, display: 'none' }) ),
-  state('open', style({ transform: 'scale(1)', opacity: 1, display: 'grid' }) ),
-  transition('closed <=> open', [animate('.3s')])
+  transition(':enter', [
+    style({
+      opacity: 0,
+      zIndex: -4,
+      transform: 'scale(0)'
+    }),
+    animate('.07s',
+      style({
+        opacity: 1,
+        zIndex: 44,
+        transform: 'scale(1)'
+      })
+    )
+  ]),
+  transition(':leave', [
+    animate('.1s',
+      style({
+        opacity: 0,
+        scale: 0,
+        zIndex: -4
+      })
+    )
+  ])
+  /*state(':leave', style({ transform: 'scale(0)', opacity: 0, zIndex: -4 }) ),
+  state(':enter', style({ transform: 'scale(1)', opacity: 1, zIndex: 44 }) ),
+  transition(':enter <=> :leave', [animate('.3s')])*/
 ])
 
 @Component({

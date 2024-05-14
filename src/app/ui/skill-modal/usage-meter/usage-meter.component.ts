@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-usage-meter',
+  selector: 'usage-meter',
   standalone: true,
   imports: [],
   templateUrl: './usage-meter.component.html',

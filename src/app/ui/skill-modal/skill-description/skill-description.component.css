@@ -1,0 +1,13 @@
+:host{
+    place-self: center;
+    background-color: hsl(var(--gray-900), .22);
+    padding: var(--line-wide);
+    border-radius: var(--line-narrow);
+}
+
+.description{
+    --text-size: var(--text-article-3);
+    color: hsl(var(--gray-300), 1);
+    --kerning-nudge-amt: 7;
+    width: 66ch;
+}

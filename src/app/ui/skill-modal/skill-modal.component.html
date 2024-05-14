@@ -1,1 +1,9 @@
-<p>skill-modal works!</p>
+<section class="mainContainer">
+    <!--<h2 class="srcryTxt title">{{Data.name}}</h2>-->
+    <button class="closeBtn" (click)="closeModal()">close</button>
+    <svg [attr.viewBox]="createViewBox()" class="logo">
+        <use [attr.href]="Data.logo" [ngStyle]="Styles" />
+    </svg>
+    <skill-description class="skillDescription" [Data]="Data.description" />
+    <year-counter class="yearCounter" [Data]="Data.experience.startYear" />
+</section>

@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { SkillContainerComponent } from './skill-container/skill-container.component';
 import { SkillData } from '../../../types/types';
 import { HomePageService } from './home-page.service';
+import { UsageMeterComponent } from '../../ui/skill-modal/usage-meter/usage-meter.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [SkillContainerComponent],
+  imports: [SkillContainerComponent, UsageMeterComponent],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.css'
 })
