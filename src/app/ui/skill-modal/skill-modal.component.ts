@@ -4,11 +4,12 @@ import { SkillModalService } from './skill-modal.service';
 import { CommonModule } from '@angular/common';
 import { YearCounterComponent } from './year-counter/year-counter.component';
 import { SkillDescriptionComponent } from './skill-description/skill-description.component';
+import { UsageMeterComponent } from './usage-meter/usage-meter.component';
 
 @Component({
   selector: 'skill-modal',
   standalone: true,
-  imports: [CommonModule, YearCounterComponent, SkillDescriptionComponent],
+  imports: [CommonModule, YearCounterComponent, SkillDescriptionComponent, UsageMeterComponent],
   templateUrl: './skill-modal.component.html',
   styleUrl: './skill-modal.component.css'
 })
