@@ -1,1 +1,18 @@
-<p>skill-modal works!</p>
+<section class="mainContainer">
+    <svg class="closeBtn" viewBox="0 0 20 20" width="100%" height="100%" (click)="closeModal()">
+        <line class="closeLine" x1="3" y1="3" x2="18" y2="18" />
+        <line class="closeLine" x1="18" y1="3" x2="3" y2="18" />
+    </svg>
+
+    <div class="logoFrame">
+        <svg [attr.viewBox]="createViewBox()" class="logo">
+            <use [attr.href]="Data.logo" [ngStyle]="Styles" />
+        </svg>
+    </div>
+    
+    <usage-meter class="usageMeter" [Data]="Data.usage" />
+    <year-counter class="yearCounter" [Data]="Data.experience.startYear" />
+    <article class="skillDescription">
+        <skill-description [Data]="Data.description" />
+    </article>
+</section>

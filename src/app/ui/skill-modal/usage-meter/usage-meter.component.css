@@ -1,0 +1,74 @@
+:host{
+    display: grid;
+    place-items: center;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.mainContainer{
+    display: grid;
+    grid-template-rows: min-content min-content;
+    place-items: center;
+    --baseSize-w: var(--xSmall-1-3);
+    --edgeChase-w: var(--tiny-1-4);
+    --chaseStop-w: var(--loMed-1-3);
+}
+
+.title{
+    grid-area: 2/1/3/2;
+    text-align: center;
+    color: hsl(var(--gray-300), 1);
+    --text-size: var(--text-caption-1);
+    --kerning-nudge-amt: 7;
+    justify-self: center;
+}
+
+.usageAmt{
+    grid-area: 1/1/2/2;
+    text-align: center;
+    color: hsl(var(--gray-300), 1);
+    justify-self: center;
+    align-self: flex-end;
+    font-size: var(--text-caption-3);
+}
+
+.meter{
+    grid-area: 1/1/2/2;
+    z-index: 6;
+    transform-origin: center;
+    fill: none;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tick{
+    stroke: hsl(var(--gray-300), 1);
+    stroke-width: .5px;
+
+}
+
+.meterText{
+    font-size: 6px;
+    fill: hsl(var(--gray-300), 1);
+}
+
+.meter-background{
+    fill: hsl(var(--gray-800), 1);
+}
+
+.meter-foreground{
+    fill: hsl(var(--gray-100), 1);
+    transform: rotate(var(--degrees));
+}
+
+@media screen and (min-width: 600px){
+    .usageAmt{
+        font-size: var(--text-article-4);
+    }
+
+    .title{
+        font-size: var(--text-article-1);
+    }
+}

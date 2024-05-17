@@ -33,3 +33,7 @@ export interface SkillData{
     usage: number;
     description: string;
 }
+
+export interface LogoStyle{
+    [prop: string]: string;
+  }

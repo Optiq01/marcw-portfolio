@@ -1,0 +1,41 @@
+<article class="srcryBox mainContainer">
+    <h2 class="srcryTxt title">usage</h2>
+    <p class="usageAmt">{{UsePercentage}}%</p>
+    <svg class="meter" viewBox="0 0 110 55.915791">
+        <clipPath id="meterMask">
+            <path d="M13.516641,54h15.844701c0-14.15984,11.478819-25.638659,25.638659-25.638659S80.638657,39.84016,80.638657,54
+            H96.48336c0-22.910627-18.572731-41.48336-41.48336-41.48336S13.516641,31.089373,13.516641,54z" />
+        </clipPath>
+    
+        <g clip-path="url(#meterMask)">
+            <rect class="meter-background" x="13.516641" y="12.516641" width="82.966721" height="41.48336"/>
+            <rect
+                class="meter-foreground"
+                x="13.516641"
+                y="54.000001"
+                width="82.966721"
+                height="41.48336"
+                transform-origin="55 54.000001"
+                [style.--degrees]="Experience+'deg'"
+            />
+        </g>
+        <path id="arcPath" class="arc" d="M10.447428,54C10.447428,29.394293,30.394293,9.447428,55,9.447428S99.552574,29.394293,99.552574,54" />
+        <line class="tick" x1="0.751398" x1="11.073826" y1="54" x2="13.199105" y2="54" />
+        <line class="tick" x1="33.036911" y1="15.958817" x2="34.099552" y2="17.799364" />
+        <line class="tick" x1="98.926178" y1="54" x2="96.800896" y2="54" />
+        <line class="tick" x1="66.640663" x1="76.963089" y1="15.958817" x2="75.900444" y2="17.799364" />
+    
+        <text>
+            <textPath class="meterText" startOffset="0" alignment-baseline="top" href="#arcPath">never</textPath>
+        </text>
+        <text>
+            <textPath class="meterText" startOffset ="31" alignment-baseline="top" href="#arcPath">occasionally</textPath>
+        </text>
+        <text>
+            <textPath class="meterText" startOffset ="81" alignment-baseline="top" href="#arcPath">frequently</textPath>
+        </text>
+        <text>
+            <textPath class="meterText" startOffset ="128" alignment-baseline="top" href="#arcPath">daily</textPath>
+        </text>
+    </svg>
+</article>

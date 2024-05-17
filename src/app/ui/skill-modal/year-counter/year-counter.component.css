@@ -1,0 +1,27 @@
+:host{
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    height: min-content;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(var(--gray-300), 1);
+}
+
+p{
+    --text-size: var(--text-caption-1);
+    --kerning-nudge-amt: 7;
+    --leading-nudge-amt: -66;
+    text-align: center;
+    font-weight: 600;
+}
+
+h2{
+    font-size: var(--text-jumbotron-3);
+    text-align: center;
+}
+
+@media screen and (min-width: 600px){
+    p{
+        --text-size: var(--text-article-1);
+    }
+}
