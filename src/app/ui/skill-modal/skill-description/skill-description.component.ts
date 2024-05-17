@@ -11,6 +11,7 @@ export class SkillDescriptionComponent implements OnInit {
 
   @Input() Data!: string;
   Description: string = '';
+  CursorToggle: boolean = true;
 
   ngOnInit(): void {
       this.addText();
@@ -20,6 +21,7 @@ export class SkillDescriptionComponent implements OnInit {
     const text: string[] = this.Data.split('');
     const textTyper = setInterval(()=>{
       if(text.length === 0){
+        this.CursorToggle = false;
         clearInterval(textTyper);
       }
       else{
